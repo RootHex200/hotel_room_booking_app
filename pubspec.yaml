@@ -1,4 +1,4 @@
-name: hotel_romm_booking
+name: hotel_room_booking
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_riverpod: ^2.4.10
   go_router: ^13.2.0
+  dio: ^5.4.1
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hotel_room_booking/src/core/router/app_router_config.dart';
+import 'package:hotel_room_booking/src/core/values/theme/light_theme.dart';
 
 void main() {
   runApp( const ProviderScope(child: MyApp()));
@@ -13,10 +14,9 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context,WidgetRef ref) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'HotelBooking',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
+      theme: lightTheme,
       routerConfig: ref.read(goRouterProvider),
     );
   }

@@ -10,7 +10,7 @@ class AppString {
   static const String signup = "Signup";
   static const String startExploring = "Start Exploring";
   static const String create = "Create";
-  static const String account = "Accountg";
+  static const String account = "Account";
   static const String signUpLongText =
       "Fill your information below or register with your social account.";
   static const String continueText = "Continue";

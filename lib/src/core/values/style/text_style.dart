@@ -21,8 +21,15 @@ const getStartScreenHeadLineTextStyle=TextStyle(
   color: AppColor.primaryColor
 );
 
-const getStartScreenHSubLineTextStyle=TextStyle(
+const longTextStyle=TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w400,
   color: AppColor.blackTextColor
+);
+
+
+const whiteColorTextStyle=TextStyle(
+  fontSize: 17,
+  color: AppColor.whiteTextColor,
+  fontWeight: FontWeight.bold
 );

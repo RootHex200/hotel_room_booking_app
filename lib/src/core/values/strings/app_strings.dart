@@ -28,7 +28,7 @@ class AppString {
   static const String verificationText = "Please  enter the verification code sent to example@gmail.com";
   static const String  forgotPassword = "Forgot Password?";
    
-  static const String signinLongtext =
+  static const String signInLongText =
       "We missed you! Login to continue your journey with us. ";
 
   static const String payment = "Payment";
@@ -45,5 +45,6 @@ class AppString {
   static const String username="Username";
   static const String email="Email";
   static const String password="Password";
-
+  static const String orContinueWith = "Or Continue with";
+  static const String notAccount = "Dose't have any account?";
 }

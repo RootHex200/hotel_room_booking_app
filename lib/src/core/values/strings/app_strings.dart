@@ -42,5 +42,8 @@ class AppString {
   static const String expiryDate = "Expiry Date";
   static const String cvv = "CVV";
   static const String payNow = "Pay Now";
+  static const String username="Username";
+  static const String email="Email";
+  static const String password="Password";
 
 }

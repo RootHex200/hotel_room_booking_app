@@ -33,3 +33,37 @@ const whiteColorTextStyle=TextStyle(
   color: AppColor.whiteTextColor,
   fontWeight: FontWeight.bold
 );
+
+
+const headLineRichTextBlackColorBoldTextStyle=TextStyle(
+  fontSize: 30,
+  color: AppColor.blackTextColor,
+  fontWeight: FontWeight.bold
+);
+
+const headLineRichTextBlueColorBoldTextStyle=TextStyle(
+  fontSize: 30,
+  color: AppColor.primaryColor,
+  fontWeight: FontWeight.bold
+);
+
+const textFiledTextStyle=TextStyle(
+  fontSize: 17,
+  color: AppColor.blackTextColor,
+  fontWeight: FontWeight.w500
+);
+
+const grayColorTextStyle=TextStyle(
+  fontSize: 17,
+  color: AppColor.grayTextColor,
+  fontWeight: FontWeight.w500
+);
+
+
+const linkTextStyle=TextStyle(
+  fontSize: 17,
+  color: AppColor.yellowColor,
+  fontWeight: FontWeight.w500,
+  decoration: TextDecoration.underline,
+  decorationColor: AppColor.yellowColor
+);

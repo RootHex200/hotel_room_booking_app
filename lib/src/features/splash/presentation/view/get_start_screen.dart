@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_button_widget.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_space_widget.dart';
+import 'package:hotel_room_booking/src/core/router/routers.dart';
 import 'package:hotel_room_booking/src/core/values/strings/app_strings.dart';
 import 'package:hotel_room_booking/src/core/values/style/text_style.dart';
 
@@ -26,14 +28,23 @@ class GetStartScreen extends StatelessWidget {
 
             const VerticalSpace(height: 30),
 
-            CustomButtonWidget(
-              radius: 17,
-              margin: const EdgeInsets.only(left: 20,right: 20),
-              buttonText: AppString.startExploring,height: 50,width: MediaQuery.of(context).size.width,),
+            GestureDetector(
+              onTap: (){
+                _navigateToSignUpScreen(context);
+              },
+              child: CustomButtonWidget(
+                radius: 17,
+                margin: const EdgeInsets.only(left: 20,right: 20),
+                buttonText: AppString.startExploring,height: 50,width: MediaQuery.of(context).size.width,),
+            ),
         
           ],
         ),
       ),
     );
   }
+}
+
+void _navigateToSignUpScreen(BuildContext context){
+  context.goNamed(Routes.signUp.name);
 }

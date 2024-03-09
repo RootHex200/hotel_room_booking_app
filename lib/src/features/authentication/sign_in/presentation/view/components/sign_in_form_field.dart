@@ -55,7 +55,7 @@ class _SignInFormFieldState extends State<SignInFormField> {
           height: 50,
           margin: const EdgeInsets.only(left: 20,right: 20),
           width: MediaQuery.of(context).size.width,
-          buttonText: AppString.signup, radius: 16)
+          buttonText: AppString.login, radius: 16)
       ],
     );
   }

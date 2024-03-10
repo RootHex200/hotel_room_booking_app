@@ -32,7 +32,7 @@ final GoRouter _router=GoRouter(
           },
         ),
         GoRoute(
-          path: Routes.auth.name,
+          path: Routes.signUp.name,
           name: Routes.signUp.name,
           pageBuilder: (context, state) {
             return  MaterialPage(

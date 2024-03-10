@@ -11,4 +11,5 @@ class AppColor {
   static const Color textFieldBorderColor=Color(0xFF6C6868);
   static const Color opacityPrimaryColor=Color(0xFF007EF2);
   static const Color dividerColor=Color(0xFF7F7F7F);
+  static const Color black=Color(0xFF000000);
 }

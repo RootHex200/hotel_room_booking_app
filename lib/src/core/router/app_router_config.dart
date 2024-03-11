@@ -9,6 +9,7 @@ import 'package:hotel_room_booking/src/features/authentication/sign_in/presentat
 import 'package:hotel_room_booking/src/features/authentication/sign_up/presentation/view/sign_up_page.dart';
 import 'package:hotel_room_booking/src/features/splash/presentation/view/get_start_screen.dart';
 import 'package:hotel_room_booking/src/features/splash/presentation/view/splash_screen.dart';
+import 'package:hotel_room_booking/src/main/presentation/view/bottom_nav_bar.dart';
 
 
 final goRouterProvider = Provider((ref) => _router);
@@ -59,6 +60,16 @@ final GoRouter _router=GoRouter(
             return  MaterialPage(
               key: state.pageKey,
               child: const AccountVerification()
+            );
+          },
+        ),
+        GoRoute(
+          path: Routes.app.name,
+          name: Routes.app.name,
+          pageBuilder: (context, state) {
+            return  MaterialPage(
+              key: state.pageKey,
+              child: const BottomNavBar()
             );
           },
         ),

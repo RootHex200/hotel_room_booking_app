@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_button_widget.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_space_widget.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_text_field.dart';
+import 'package:hotel_room_booking/src/core/router/routers.dart';
 import 'package:hotel_room_booking/src/core/values/strings/app_strings.dart';
 
 class SignInFormField extends StatefulWidget {
@@ -51,12 +53,21 @@ class _SignInFormFieldState extends State<SignInFormField> {
             ),
         const VerticalSpace(height: 50),
 
-        CustomButtonWidget(
-          height: 50,
-          margin: const EdgeInsets.only(left: 20,right: 20),
-          width: MediaQuery.of(context).size.width,
-          buttonText: AppString.login, radius: 16)
+        GestureDetector(
+          onTap: (){
+            _navigateToBottomNavPage(context);
+          },
+          child: CustomButtonWidget(
+            height: 50,
+            margin: const EdgeInsets.only(left: 20,right: 20),
+            width: MediaQuery.of(context).size.width,
+            buttonText: AppString.login, radius: 16),
+        )
       ],
     );
   }
+}
+
+void _navigateToBottomNavPage(BuildContext context){
+  context.goNamed(Routes.app.name);
 }

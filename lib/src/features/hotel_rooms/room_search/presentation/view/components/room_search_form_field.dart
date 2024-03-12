@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_button_widget.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_space_widget.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_text_field.dart';
+import 'package:hotel_room_booking/src/core/router/routers.dart';
 import 'package:hotel_room_booking/src/core/values/colors/app_colors.dart';
 import 'package:hotel_room_booking/src/core/values/strings/app_strings.dart';
 import 'package:hotel_room_booking/src/core/values/style/text_style.dart';
@@ -83,11 +85,21 @@ class _RoomSearchFormFieldState extends State<RoomSearchFormField> {
           ),
           ),
           const VerticalSpace(height: 20),
-          const CustomButtonWidget(
-            height: 60,
-            buttonText: AppString.find, radius: 10),
+          GestureDetector(
+            onTap: (){
+              _navigateToRoomsPage(context);
+            },
+            child: const CustomButtonWidget(
+              height: 60,
+              buttonText: AppString.find, radius: 10),
+          ),
         ],
       ),
     );
   }
+}
+
+
+void _navigateToRoomsPage(BuildContext context){
+  context.goNamed(Routes.room.name);
 }

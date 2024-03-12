@@ -67,3 +67,16 @@ const linkTextStyle=TextStyle(
   decoration: TextDecoration.underline,
   decorationColor: AppColor.yellowColor
 );
+
+const yellowTextStyle=TextStyle(
+  fontSize: 18,
+  color: AppColor.yellowColor,
+  fontWeight: FontWeight.w500,
+);
+
+const mediumBoldBlackTextStyle=TextStyle(
+  fontSize: 20,
+  color: AppColor.black,
+  fontWeight: FontWeight.bold,
+);
+

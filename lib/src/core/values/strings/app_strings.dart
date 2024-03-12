@@ -47,4 +47,11 @@ class AppString {
   static const String password="Password";
   static const String orContinueWith = "Or Continue with";
   static const String notAccount = "Dose't have any account?";
+  static const String welcomeLongText="Welcome to your next Adventures";
+  static const String welcomeSubLongText="Discover the Perfect Stay with WanderStay";
+  static const String dateTime="DD/MM/YY";
+  static const String checkIn="CheckIn";
+  static const String checkOut="CheckOut";
+  static const String guest="Guests";
+  static const String find="FIND";
 }

@@ -12,7 +12,9 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     this.obscureText = false,
     required this.iconPath,
-    this.initialValue
+    this.initialValue,
+    this.readOnly=false,
+    this.onTap
   });
 
   final String hintText;
@@ -22,13 +24,17 @@ class CustomTextField extends StatelessWidget {
   final bool obscureText;
   final String iconPath;
   final String? initialValue;
+  final bool readOnly;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      readOnly: readOnly,
       controller: controller,
       onChanged: onChanged,
       obscureText: obscureText,
+      onTap: onTap,
       cursorColor: AppColor.primaryColor,
       style: textFiledTextStyle,
       decoration: InputDecoration(

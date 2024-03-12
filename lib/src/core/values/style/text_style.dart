@@ -80,3 +80,24 @@ const mediumBoldBlackTextStyle=TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const blueColorBoldTextStyle=TextStyle(
+  fontSize: 20,
+  color: AppColor.primaryColor,
+  fontWeight: FontWeight.bold
+);
+
+const blueSmallColorBoldTextStyle=TextStyle(
+  fontSize: 18,
+  color: AppColor.primaryColor,
+);
+
+const priceRichBlueTextStyle=TextStyle(
+  fontSize: 21,
+  color: AppColor.primaryColor,
+  fontWeight: FontWeight.bold
+);
+
+const priceRichBlackTextStyle=TextStyle(
+  fontSize: 21,
+  color: AppColor.grayTextColor,
+);

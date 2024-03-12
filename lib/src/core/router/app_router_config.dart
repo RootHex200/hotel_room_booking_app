@@ -7,6 +7,7 @@ import 'package:hotel_room_booking/src/core/router/routers.dart';
 import 'package:hotel_room_booking/src/features/authentication/otp/presentation/view/account_verification.dart';
 import 'package:hotel_room_booking/src/features/authentication/sign_in/presentation/view/sign_in_page.dart';
 import 'package:hotel_room_booking/src/features/authentication/sign_up/presentation/view/sign_up_page.dart';
+import 'package:hotel_room_booking/src/features/hotel_rooms/rooms/presentation/view/rooms_page.dart';
 import 'package:hotel_room_booking/src/features/splash/presentation/view/get_start_screen.dart';
 import 'package:hotel_room_booking/src/features/splash/presentation/view/splash_screen.dart';
 import 'package:hotel_room_booking/src/main/presentation/view/bottom_nav_bar.dart';
@@ -70,6 +71,16 @@ final GoRouter _router=GoRouter(
             return  MaterialPage(
               key: state.pageKey,
               child: const BottomNavBar()
+            );
+          },
+        ),
+        GoRoute(
+          path: Routes.room.name,
+          name: Routes.room.name,
+          pageBuilder: (context, state) {
+            return  MaterialPage(
+              key: state.pageKey,
+              child: const RoomsPage()
             );
           },
         ),

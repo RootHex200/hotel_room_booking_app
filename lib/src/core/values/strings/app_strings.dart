@@ -54,4 +54,10 @@ class AppString {
   static const String checkOut="CheckOut";
   static const String guest="Guests";
   static const String find="FIND";
+  static const String searchRoom="Search Room by Number";
+  static const String availableRoom="14 Available Rooms";
+  static const String vatTax="*Price inclusive of VAT & Tax";
+  static const String tmp="20 Apr-22 Apr,1 Rooms(s),2 Person(s)";
+  static const String filter="FILTER";
+  static const String offer="10% OFF";
 }

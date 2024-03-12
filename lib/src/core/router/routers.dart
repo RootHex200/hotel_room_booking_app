@@ -7,5 +7,6 @@ enum Routes {
   signUp,
   details,
   accountVerification,
-  app
+  app,
+  room
 }

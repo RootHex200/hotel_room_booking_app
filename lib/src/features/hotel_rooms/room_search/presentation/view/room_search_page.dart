@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hotel_room_booking/src/core/common/widgets/custom_space_widget.dart';
 import 'package:hotel_room_booking/src/core/values/colors/app_colors.dart';
@@ -11,51 +10,60 @@ class RoomSearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
-          child: SizedBox(
-            height: MediaQuery.of(context).size.height,
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                Positioned(
-                  top: 0,
-                  child: Image(
-                    fit: BoxFit.fill,
-                    width: MediaQuery.of(context).size.width,
-                    height: 400,
-                    image: const AssetImage("assets/images/bg_image.png")
-                  ),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 250,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Positioned(
+                      top: 0,
+                      child: Image(
+                          fit: BoxFit.fill,
+                          width: MediaQuery.of(context).size.width,
+                          height: 290,
+                          image:
+                              const AssetImage("assets/images/bg_image.png")),
+                    ),
+                    Positioned(
+                      top: 210,
+                      child: Container(
+                        height: 60,
+                        width: MediaQuery.of(context).size.width,
+                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        decoration: const BoxDecoration(
+                            color: AppColor.whiteBackgroundColor,
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(50),
+                                topRight: Radius.circular(50))),
+                      ),
+                    )
+                  ],
                 ),
-                Positioned(
-                  top: 200,
-                  child: Container(
-                    width: MediaQuery.of(context).size.width,
-                    padding: const EdgeInsets.only(left: 20,right: 20),
-                    decoration: const BoxDecoration(
-                      color: AppColor.whiteBackgroundColor,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(50),
-                        topRight: Radius.circular(50)
-                        )
-                    ),
-                    child: const Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        VerticalSpace(height: 30),
-                        Text(AppString.welcomeLongText,maxLines: 2,style: headLineRichTextBlueColorBoldTextStyle,),
-                        VerticalSpace(height: 10),
-                        Text(AppString.welcomeSubLongText,maxLines: 2,style:yellowTextStyle,),
-                        VerticalSpace(height: 20),
-                        RoomSearchFormField()
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            ),
+              ),
+              // const VerticalSpace(height: 30),
+              const Padding(
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  child: Text(
+                    AppString.welcomeLongText,
+                    maxLines: 2,
+                    style: headLineRichTextBlueColorBoldTextStyle,
+                  )),
+              const VerticalSpace(height: 10),
+              const Padding(
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  child: Text(
+                    AppString.welcomeSubLongText,
+                    maxLines: 2,
+                    style: yellowTextStyle,
+                  )),
+              const VerticalSpace(height: 20),
+              const RoomSearchFormField()
+            ],
           ),
         ),
       ),

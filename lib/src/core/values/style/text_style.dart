@@ -87,17 +87,23 @@ const blueColorBoldTextStyle=TextStyle(
 );
 
 const blueSmallColorBoldTextStyle=TextStyle(
-  fontSize: 18,
+  fontSize: 16,
   color: AppColor.primaryColor,
 );
 
 const priceRichBlueTextStyle=TextStyle(
-  fontSize: 21,
+  fontSize: 18,
   color: AppColor.primaryColor,
   fontWeight: FontWeight.bold
 );
 
 const priceRichBlackTextStyle=TextStyle(
-  fontSize: 21,
+  fontSize: 18,
   color: AppColor.grayTextColor,
+);
+
+const smallBoldBlackTextStyle=TextStyle(
+  fontSize: 17,
+  color: AppColor.black,
+  fontWeight: FontWeight.bold,
 );

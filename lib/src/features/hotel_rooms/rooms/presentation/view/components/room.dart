@@ -42,8 +42,8 @@ class Room extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                    width: 100,
-                    height: 40,
+                    width: 80,
+                    height: 30,
                     decoration: BoxDecoration(
                         color: AppColor.primaryColor.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(20)),
@@ -55,8 +55,8 @@ class Room extends StatelessWidget {
                   ),
                   const HorizontalSpace(width: 10),
                   Container(
-                    width: 100,
-                    height: 40,
+                    width: 80,
+                    height: 30,
                     decoration: BoxDecoration(
                         color: AppColor.primaryColor.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(20)),
@@ -79,7 +79,7 @@ class Room extends StatelessWidget {
                   const Icon(
                     Icons.favorite_outline,
                     color: AppColor.primaryColor,
-                    size: 32,
+                    size: 28,
                   )
                 ],
               ),

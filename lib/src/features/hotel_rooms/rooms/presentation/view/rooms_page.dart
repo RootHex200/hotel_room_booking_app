@@ -4,6 +4,7 @@ import 'package:hotel_room_booking/src/core/common/widgets/custom_space_widget.d
 import 'package:hotel_room_booking/src/core/values/colors/app_colors.dart';
 import 'package:hotel_room_booking/src/core/values/strings/app_strings.dart';
 import 'package:hotel_room_booking/src/core/values/style/text_style.dart';
+import 'package:hotel_room_booking/src/features/hotel_rooms/rooms/presentation/view/components/bottomsheet_filter.dart';
 import 'package:hotel_room_booking/src/features/hotel_rooms/rooms/presentation/view/components/room.dart';
 
 class RoomsPage extends StatelessWidget {
@@ -25,10 +26,10 @@ class RoomsPage extends StatelessWidget {
          Container(
           color: AppColor.whiteBackgroundColor.withOpacity(0.3),
           padding: const EdgeInsets.only(left: 10,right: 10),
-          child: const Row(
+          child:  Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(AppString.availableRoom,style: mediumBoldBlackTextStyle,),
@@ -38,11 +39,18 @@ class RoomsPage extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text(AppString.filter,style: blueColorBoldTextStyle,),
-                  HorizontalSpace(width: 8),
-                  Image(
-                    color: AppColor.primaryColor,
-                    image: AssetImage("assets/images/filter.png"))
+                  const Text(AppString.filter,style: blueColorBoldTextStyle,),
+                  const HorizontalSpace(width: 8),
+                  GestureDetector(
+                    onTap: (){
+                      showModalBottomSheet(context: context, builder: (BuildContext context){
+                        return const BottomSheetFilter();
+                      });
+                    },
+                    child: const Image(
+                      color: AppColor.primaryColor,
+                      image: AssetImage("assets/images/filter.png")),
+                  )
                 ],
               )
             ],

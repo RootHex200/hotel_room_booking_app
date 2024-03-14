@@ -60,4 +60,11 @@ class AppString {
   static const String tmp="20 Apr-22 Apr,1 Rooms(s),2 Person(s)";
   static const String filter="FILTER";
   static const String offer="10% OFF";
+  static const String cancel="Cancel";
+  static const String reset="Reset";
+  static const String apply="APPLY";
+  static const String priceRange="Price Ranges";
+  static const String sort= "Sort By";
+  static const String lowToHigh='\$ - \$\$ Price Lower to Higher';
+  static const String highToLow='\$ - \$\$ Price High to Low';
 }

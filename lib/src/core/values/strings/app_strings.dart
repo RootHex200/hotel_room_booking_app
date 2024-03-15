@@ -67,4 +67,11 @@ class AppString {
   static const String sort= "Sort By";
   static const String lowToHigh='\$ - \$\$ Price Lower to Higher';
   static const String highToLow='\$ - \$\$ Price High to Low';
+  static const String roomDetails="Room Details";
+  static const String roomNumber="Room Number";
+  static const String description="Description";
+  static const String contact_info="Contact info";
+  static const String gallery="Gallery";
+  static const String bookNow="BOOK NOW";
+  static const String tmpLong="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.";
 }

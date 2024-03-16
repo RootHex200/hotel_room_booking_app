@@ -5,12 +5,13 @@ import 'package:hotel_room_booking/src/core/values/colors/app_colors.dart';
 import 'package:hotel_room_booking/src/core/values/style/text_style.dart';
 
 class CustomButtonWidget extends StatelessWidget {
-  const CustomButtonWidget({super.key,this.height,this.width,required this.buttonText,this.margin,required this.radius});
+  const CustomButtonWidget({super.key,this.color=AppColor.primaryColor,this.height,this.width,required this.buttonText,this.margin,required this.radius});
   final double? height;
   final double? width;
   final String buttonText;
   final EdgeInsetsGeometry? margin;
   final double radius;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +19,7 @@ class CustomButtonWidget extends StatelessWidget {
       height: height,
       width: width,
       decoration: BoxDecoration(
-        color: AppColor.primaryColor,
+        color: color,
         borderRadius: BorderRadius.circular(radius)
       ),
       child: Center(child: Text(buttonText,style:whiteColorTextStyle,)),

@@ -45,3 +45,5 @@ app.*.map.json
 /linux/
 /macos/
 /windows/
+
+/lib/src/core/values/secret/stripe_key.dart

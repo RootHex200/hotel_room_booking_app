@@ -8,5 +8,6 @@ enum Routes {
   details,
   accountVerification,
   app,
-  room
+  room,
+  payment
 }

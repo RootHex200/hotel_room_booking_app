@@ -12,4 +12,5 @@ class AppColor {
   static const Color opacityPrimaryColor=Color(0xFF007EF2);
   static const Color dividerColor=Color(0xFF7F7F7F);
   static const Color black=Color(0xFF000000);
+  static const Color whiteColor = Color(0xFFFFFFFF);
 }
